@@ -7,21 +7,33 @@
     <title>Rock Paper Scissor</title>
 </head>
 <body>
+    <header>
+        <h2>Rock, Paper, Scissors</h2>
+    </header>
+
     <section class="game-area">
 
         <!--Title-->
-
-        <div class="title">Rock Paper Scissor</div>
-        <p>Make a choice:</p>
+        <div>
+            <p>Make a choise:</p>
         <button aria-label="Rock" data-choice="0" class="control">Rock</button>
         <button aria-label="Rock" data-choice="1" class="control">Paper</button>
         <button aria-label="Rock" data-choice="2" class="control">Scissor</button>
+        </div>
+        <div id="messages"></div>
     </section>
+
+    <div class="player">
+        <h3 class="scores">Your score: <span id="player-score">0</span></h3>
+        <!--Here goes the image for player-->
+    </div>
+    <div class="computer">
+        <h3 class="scores">Computer score: <span id="computer-score">0</span></h3>
+    </div>
 </body>
 
 <footer>
     <h3>Rules</h3>
     <p>Scissors cut paper | Paper covers Rock | Rock blunts Scissors</p>
-    <p>Copyright by Jessica Fransson, 2022</p>
 </footer>
 </html>
