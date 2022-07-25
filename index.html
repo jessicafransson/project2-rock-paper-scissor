@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Rock Paper Scissor</title>
 </head>
@@ -43,13 +43,27 @@
         <!-- Here goes the image for the computer score-->
     </div>
 
-<!--Footer section-->
+    <!--Result score board-->
 
-<footer>
-    <h3>Rules</h3>
-    <p>Scissors cut paper | Paper covers Rock | Rock blunts Scissors</p>
-</footer>
-<script src="https://kit.fontawesome.com/af04db9847.js" crossorigin="anonymous"></script>
+    <div class="results">
+        <div>
+            <i class="fa-solid fa-circle-user"></i> =
+            <span id="result-score-user" data-user-score>0</span>
+        </div>
+        <div data-final>
+            <i class="fa-solid fa-laptop"></i> =
+            <span id="result-score-computer" data-computer-score>0</span>
+        </div>
+    </div>
+
+    <!--Footer section-->
+
+    <footer>
+        <h3>Rules</h3>
+        <p>Scissors cut paper | Paper covers Rock | Rock blunts Scissors</p>
+    </footer>
+    <script src="https://kit.fontawesome.com/af04db9847.js" crossorigin="anonymous"></script>
     <script src="assets/js/script.js"></script>
 </body>
+
 </html>
