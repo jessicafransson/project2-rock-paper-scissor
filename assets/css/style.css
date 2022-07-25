@@ -1,3 +1,5 @@
+/** General style **/ 
+
 * {
     margin: 1rem;
     padding: 0;
@@ -9,4 +11,24 @@ body {
     text-align: center;
     font-family: "Lato", sans-serif;
     font-size: 2.5rem;
+}
+/** Button styles **/ 
+
+button {
+    margin: 2.5rem;
+    font-size: 3rem;
+    text-align: center;
+    background-color: aliceblue;
+}
+
+button:hover {
+    background-color: beige;
+    transition: 0.3s;
+}
+
+/** text style **/
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
 }
