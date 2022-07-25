@@ -1,13 +1,11 @@
 /* Main view setup */
 
-html {
-    min-height: 100%;
-    position: relative;
-}
-
-body {
-    font-family: sans-serif;
+{
+    padding: 0;
     margin: 0;
+    box-sizing: border-box;
+    background: #082c6c;
+    color: #fff;
 }
 
 /* Header and footer */
