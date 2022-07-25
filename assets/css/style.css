@@ -1,29 +1,12 @@
-/* Main view setup */
-
-{
+* {
+    margin: 1rem;
     padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    background: #082c6c;
-    color: #fff;
+    border: none;
 }
 
-/* Header and footer */
-
-header {
+body {
+    background-color: dimgrey;
     text-align: center;
-    height: 50px;
-}
-
-footer {
-    position: absolute;
-    width: 100%;
-    left: 0;
-    bottom: 0;
-    box-sizing: border-box;
-    min-height: 80px;
-    padding-top: 5px;
-    text-align: center;
-    color: #fff;
-    background-color: dimgray;
+    font-family: "Space Mono", sans-serif;
+    font-size: 2.5rem;
 }
