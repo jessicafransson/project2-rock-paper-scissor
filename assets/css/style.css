@@ -1,0 +1,31 @@
+/* Main view setup */
+
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+/* Header and footer */
+
+header {
+    text-align: center;
+    height: 50px;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    box-sizing: border-box;
+    min-height: 80px;
+    padding-top: 5px;
+    text-align: center;
+    color: #fff;
+    background-color: dimgray;
+}
