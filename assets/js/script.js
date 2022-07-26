@@ -109,3 +109,11 @@ playerOptions.forEach(option => {
                 window.location.reload();
             })
         }
+
+        /** Game function */
+        game();
+
+        /** Function playGame inside the game */
+
+        playGame();
+        
