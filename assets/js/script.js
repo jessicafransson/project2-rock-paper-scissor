@@ -7,6 +7,8 @@ let s = document.getElementById('scissors');
 const winBox = document.getElementById('win-box');
 const loseBox = document.getElementById('lose-box');
 const play = document.getElementById('play-again');
+const playerOptions = [rockBtn, paperBtn, scissorBtn];
+const computerOptions = ['rock', 'paper', 'scissors'];
 
 
 /** The logic of the game inside here */
@@ -16,13 +18,11 @@ const game = () => {
     let moves = 0;
 }
 
-/** Functions to the game inside here */
-const playGame = () => {
-    const rockBtn = document.querySelector('.rock');
-    const paperBtn = document.querySelector('.paper');
-    const scissorBtn = document.querySelector('.scissor');
-    const playerOptions = [rockBtn, paperBtn, scissorBtn];
-    const computerOptions = ['rock', 'paper', 'scissors'];
+/** Section for computer to make a random choice */
+function generateComputerChoice() {
+    let choices = ['rock', 'paper','scissors'];
+    let randomNumber = Math.floor(Math.random() * choices.lenght);
+    return choices[randomNumber];
 }
 
 /** Functions to start the game */
@@ -101,12 +101,12 @@ playerOptions.forEach(option => {
 
             if(playerScore > computerScore) {
                 result.style.fontSize = '2rem';
-                result.innerText = 'You won'
+                result.innerText = 'You won 🏆';
                 result.style.color = '#dca99a'
             }
             else if(playerScore < computerScore) {
                 result.style.fontSize = '2rem';
-                result.innerText = 'You lost!';
+                result.innerText = 'You lost 😞';
                 result.style.color = '	#fe2e2e'
             }
             else{
