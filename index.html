@@ -5,12 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
     <meta name="description" content="Rock,Paper Scissor, Games, Online games">
+    <meta name="keyword" content="rock, paper, scissor, game, play">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Rock Paper Scissor</title>
 </head>
 
@@ -18,32 +15,39 @@
     <!--Header-->
     <header>
         <h1>Rock, Paper, Scissors</h1>
+        <p>Let's play:</p>
     </header>
 
     <section class="game-area">
 
-        <!--Area for the game and different choices-->
-        <div>
-            <p>Make a choise:</p>
+        <!--Player and computer scores-->
+
+        <div class="options">
             <button class="button" id="rock">Rock<i class="far fa-hand-rock"></i></button>
             <button class="button" id="paper">Paper<i class="fa-solid fa-newspaper"></i></button>
             <button class="button" id="scissor">Scissor<i class="fa-solid fa-scissors"></i></button>
         </div>
         <div id="messages"></div>
+
+        <!--Section for player image and score-->
+        <div class="player">
+            <h3 class="scores">Your score: <span id="player-score">0</span></h3>
+            <!--Here goes the image for player-->
+        </div>
+
+        <!--section for computer image and score-->
+        <div class="computer">
+            <h2 class="scores">Computer score: <span id="computer-score">0</span></h2>
+            <!-- Here goes the image for the computer score-->
+        </div>
+
     </section>
 
-    <!--Section for player image and score-->
-    <div class="player">
-        <h3 class="scores">Your score: <span id="player-score">0</span></h3>
-        <!--Here goes the image for player-->
-    </div>
+    <!-- Moves before end game -->
+    <div class="move">Choose your move</div>
+    <div class="movesLeft">Moves left: 10</div>
 
-    <!--section for computer image and score-->
-    <div class="computer">
-        <h2 class="scores">Computer score: <span id="computer-score">0</span></h2>
-        <!-- Here goes the image for the computer score-->
-    </div>
-
+    
     <!--Result score board-->
 
     <div class="results">
@@ -56,6 +60,12 @@
             <span id="result-score-computer" data-computer-score>0</span>
         </div>
     </div>
+
+    <!-- Final result -->
+    <div class="result"></div>
+
+    <!-- Restarting -->
+    <button class="reload"></button>
 
     <!--Footer section-->
 
