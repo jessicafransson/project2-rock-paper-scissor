@@ -1,3 +1,14 @@
+/**DOM manipluators */
+const buttons = document.getElementsByTagName('button');
+const startGame = document.getElementById('play-game');
+let r = document.getElementById('rock');
+let p = document.getElementById('paper');
+let s = document.getElementById('scissors');
+const winBox = document.getElementById('win-box');
+const loseBox = document.getElementById('lose-box');
+const play = document.getElementById('play-again');
+
+
 /** The logic of the game inside here */
 const game = () => {
     let playerScore = 0;
@@ -19,7 +30,7 @@ playerOptions.forEach(option => {
             option.addEventListener('click', function () {
                     const movesLeft = document.querySelector('.movesleft');
                     moves++;
-                    movesLeft.innerText = `Moves Left:  ${10-moves}`);
+                    movesLeft.innerText = `MovesLeft: ${10-moves}`);
 
                 const choiceNumber = Math.floor(Math.random() * 3);
                 const computerChoice = computerOptions[choiseNumber];
@@ -116,4 +127,3 @@ playerOptions.forEach(option => {
         /** Function playGame inside the game */
 
         playGame();
-        

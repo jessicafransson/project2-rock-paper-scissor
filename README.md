@@ -1,3 +1,5 @@
+Rock Paper Scissor is a game everyone knows! This website is a
+
 fonts from fontawesome 
 
 mockup from figma 
