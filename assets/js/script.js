@@ -21,7 +21,7 @@ const game = () => {
 /** Section for computer to make a random choice */
 function generateComputerChoice() {
     let choices = ['rock', 'paper','scissors'];
-    let randomNumber = Math.floor(Math.random() * choices.lenght);
+    let randomNumber = Math.floor(Math.random() * choices.length);
     return choices[randomNumber];
 }
 
@@ -30,12 +30,13 @@ playerOptions.forEach(option => {
             option.addEventListener('click', function () {
                     const movesLeft = document.querySelector('.movesleft');
                     moves++;
-                    movesLeft.innerText = `MovesLeft: ${10-moves}`);
+                    movesLeft.innerText = `MovesLeft: ${10-moves}`;
 
                 const choiceNumber = Math.floor(Math.random() * 3);
-                const computerChoice = computerOptions[choiseNumber];
+                const computerChoice = computerOptions[choiceNumber];
 
             })
+        })
 
         /** How to decide winner */
         const winner = (player, computer) => {
