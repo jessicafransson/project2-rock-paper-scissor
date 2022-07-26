@@ -1,5 +1,8 @@
 Rock Paper Scissor is a game everyone knows! This website is a easy way for one player to play against the computer.
 
+## Live page
+* view the live page here [https://jessicafransson.github.io/project2-rock-paper-scissor/] 
+
 ## Features
 * This setup is easy and designed to be quick to play.
 
