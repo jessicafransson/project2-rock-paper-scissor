@@ -1,14 +1,22 @@
 /**DOM manipluators */
-const buttons = document.getElementsByTagName('button');
-const startGame = document.getElementById('play-game');
-let r = document.getElementById('rock');
-let p = document.getElementById('paper');
-let s = document.getElementById('scissors');
-const winBox = document.getElementById('win-box');
-const loseBox = document.getElementById('lose-box');
-const play = document.getElementById('play-again');
-const playerOptions = [rockBtn, paperBtn, scissorBtn];
-const computerOptions = ['rock', 'paper', 'scissors'];
+const selectionButtons = document.querySelectorAll('[data-selection]')
+const finalColumn = document.querySelector('[data-final-column]')
+const computerScoreSpan = document.querySelector('[data-computer-score]')
+const yourScoreSpan = document.querySelector('[data-your-score]')
+const SELECTIONS = [
+    {
+        name: 'rock',
+        beats: 'scissors'
+    },
+    {
+        name: 'paper',
+        beats: 'rock'
+    },
+    {
+        name: 'scissor',
+        beats: 'paper'
+    }
+]
 
 /** Deciding winner */
 
