@@ -9,3 +9,12 @@ const loseBox = document.getElementById('lose-box');
 const play = document.getElementById('play-again');
 const playerOptions = [rockBtn, paperBtn, scissorBtn];
 const computerOptions = ['rock', 'paper', 'scissors'];
+
+/** Deciding winner */
+
+function makeSelection(selection) {
+    const computerSelection = randomSelection()
+    const yourWinner = isWinner(selection, computerSelection)
+    const computerWinner = isWinner(computerSelection, selection)
+    console.log(computerSelection)
+}
