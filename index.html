@@ -20,22 +20,16 @@
 
     <section class="game-area">
 
-    <!--Options-->
-        <div class="selections">
-            <button class="selection" data-selection="rock">
-                Rock
-                <i class="far fa-hand-rock"></i>
-            </button>
-            <button class="selection" data-selection="paper">
-                Paper
-                <i class="fa-solid fa-newspaper"></i>
-            </button>
-            <button class="selection" data-selection="scissor">Scissor
-                <i class="fa-solid fa-scissors"></i>
-            </button>
-        </div>
-        <div id="messages"></div>
-    </section>
+    <!--Options and buttons -->
+
+        <h2>Computer Choice: <span id="computer-choice"></span></h2>
+        <h2>Your Choice: <span id="Your-choice"></span></h2>
+        <h2>Result: <span id="result"></span></h2>
+
+        <button id="rock">Rock <i class="far fa-hand-rock"></i></button>
+        <button id="Paper">Paper <i class="fa-solid fa-newspaper"></i></button>
+        <button id="Scissors">Scissors <i class="fa-solid fa-scissors"></i></button>
+
 
     <!--Player and computer results-->
     <div class="results">
@@ -48,8 +42,8 @@
             <span class="result-score" data-computer-score>0</span>
         </div>
 
-    <!-- Restarting -->
-        <button class="reload"></button>
+    <!-- Restarting section <button class="reload"></button>-->
+    
 
 
     <!--Footer section-->
