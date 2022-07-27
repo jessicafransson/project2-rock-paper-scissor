@@ -21,44 +21,42 @@
     <section class="game-area">
 
         <!--Options-->
-        <div class="options">
-            <button class="button" id="rock">Rock<i class="far fa-hand-rock"></i></button>
-            <button class="button" id="paper">Paper<i class="fa-solid fa-newspaper"></i></button>
-            <button class="button" id="scissor">Scissor<i class="fa-solid fa-scissors"></i></button>
+        <div class="selections">
+            <button class="selection" id="rock">Rock<i class="far fa-hand-rock"></i></button>
+            <button class="selection" id="paper">Paper<i class="fa-solid fa-newspaper"></i></button>
+            <button class="selection" id="scissor">Scissor<i class="fa-solid fa-scissors"></i></button>
         </div>
         <div id="messages"></div>
     </section>
 
-    <!--Player and computer score board-->
-    <div class="score">
-        <div class="playerScore">
-            <h3>Player</h3>
-            <p class="p-count count">0</p>
-        </div>
-        <div class="computerScore">
-            <h3>Computer</h3>
-            <p class="c-count count">0</p>
-        </div>
+    <!--Player and computer results-->
+    <div class="results">
+    <div>
+        You
+        <span class="result-score" data-your-score>0</span>
     </div>
-
-    <!-- Moves before end game -->
-    <div class="move">Choose your move</div>
-    <div class="movesLeft">Moves left: 10</div>
+<div data-final-column>
+    Computer
+    <span class="result-score" data-computer-score>0</span>
+</div>
 
     <!-- Final result -->
-    <div class="result"></div>
+    <div class="result-selection-winner"></div>
+    <div class="result-selection"></div>
+
 
     <!-- Restarting -->
     <button class="reload"></button>
 
-    <!--Footer section-->
 
+    <!--Footer section-->
     <footer>
         <h3>Rules</h3>
         <p>Scissors cut paper | Paper covers Rock | Rock blunts Scissors</p>
     </footer>
 
-    <!--Javascript Filepa and fontwesome kit-->
+
+    <!--Javascript Filepage and fontwesome kit-->
     <script src="assets/js/script.js"></script>
     <script src="https://kit.fontawesome.com/af04db9847.js" crossorigin="anonymous"></script>
 
