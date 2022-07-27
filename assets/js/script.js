@@ -18,43 +18,46 @@ const SELECTIONS = [
     }
 ]
 
-/**Specify how to select the different buttons*/
+/**How to get the computer choice */
 
-selectionButtons.forEach(selectionButtons => {
-    selectionButton.addEventListener('click', e => {
-       const selectionName = selectionButton.dataSet.selection
-       const selection = SELECTIONS.find(selection => selection.name === selectionName)
-       makeSelection(selectionName)
-    })
-})
+function generateComputerChoice() {
+    const randomNumber = Math.floor(Math.random() * 3) + 1
 
-/** Random selection form computer to game */
-function randomSelection() {
-    const randomIndex = Math.floor(Math.random() * SELECTIONS.length)
-    return SELECTIONS[randomIndex]
+    if (randomNumber === 1) {
+        computerChoice = 'rock'
+    }
+    if (randomNumber === 2) {
+        computerChoice = 'scissors'
+    }
+    if (randomNumber === 3) {
+        computerChoice = 'paper'
+    }
+    computerChoiceDisplay.innerHTML = computerChoice
 }
 
-function makeSelection(selection) {
-    const computerSelection = randomSelection()
-    console.log(computerSelection)
+/** How to get the results */
+
+function getResult() {
+    if (computerChoice === userChoice) {
+        result = 'its a draw!'
+    }
+    if (computerChoice === 'rock' && userChoice === "paper") {
+        result = 'you win!'
+    }
+    if (computerChoice === 'rock' && userChoice === "scissors") {
+        result = 'you lost!'
+    }
+    if (computerChoice === 'paper' && userChoice === "scissors") {
+        result = 'you win!'
+    }
+    if (computerChoice === 'paper' && userChoice === "rock") {
+        result = 'you lost!'
+    }
+    if (computerChoice === 'scissors' && userChoice === "rock") {
+        result = 'you lost!'
+    }
+    if (computerChoice === 'scissors' && userChoice === "paper") {
+        result = 'you lost!'
+    }
+    resultDisplay.innerHTML = result
 }
-
-/** Deciding winner */
-
-function makeSelection(selection) {
-    const computerSelection = randomSelection()
-    const yourWinner = isWinner(selection, computerSelection)
-    const computerWinner = isWinner(computerSelection, selection)
-
-    addSelectionResult(computerSelection, computerWinner)
-    addSelectionResult(selection, yourWinner)
-
-    if (yourWinner) incrementScore(yourScoreSpan)
-    if (computerWinner) incrementScore(computerScoreSpan)
-}
-
-function isWinner(selection, opponentSelection) {
-    return selection.beats === opponentSelection.name
-}
-
-/**  */
