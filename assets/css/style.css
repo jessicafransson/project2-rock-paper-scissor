@@ -9,10 +9,13 @@ button {
     margin: 2.5rem;
     font-size: 3rem;
     text-align: center;
-    background-color: aliceblue;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
 }
 
 button:hover {
-    background-color: bisque;
     transition: 0.3s;
+    transform: scale(1.1);
 }
