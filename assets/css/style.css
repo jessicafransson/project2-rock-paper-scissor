@@ -23,7 +23,26 @@ button:hover {
     transform: scale(1.1);
 }
 
+/* Section for the result score */
+
+
+
 /* Section for footer styling */
 footer {
-    
+
+}
+
+/* Mobile styling */
+
+@media screen and (max-width: 480px) {
+    .title {
+        margin-top: auto;
+    }
+
+    .button {
+      position: absolute;
+      top: 200px;
+      width: 100vw;
+    }
+
 }
