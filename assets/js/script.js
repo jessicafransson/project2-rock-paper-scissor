@@ -52,7 +52,7 @@ function getResult() {
         result = 'you lost!'
     }
     if (computerChoice === 'scissors' && userChoice === "rock") {
-        result = 'you lost!'
+        result = 'you win!'
     }
     if (computerChoice === 'scissors' && userChoice === "paper") {
         result = 'you lost!'
