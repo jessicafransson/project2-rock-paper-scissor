@@ -22,9 +22,9 @@ fonts from fontawesome
 ## Testing 
 
 * This site has gone thru following tests:
-    *css
-    *html validator
-    *JSHint 
+    * css
+    * html validator - Document checking completed. No errors or warnings to show.
+    * JSHint 
 
 
 ## Deployment
@@ -48,7 +48,6 @@ fonts from fontawesome
 * ### Content
 * Fonts from: [Fonts] (https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap)
 * Color scheme from: [ColorHex] (https://www.color-hex.com/color-palette/1016582)
-
 * Testing code in playcode: https://playcode.io/javascript/
 
 ## Acknowledgements
