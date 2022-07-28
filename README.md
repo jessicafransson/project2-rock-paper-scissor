@@ -41,7 +41,8 @@ fonts from fontawesome
 * ### Inspiration
 * inspiration for JavaScript from geeks for geeks: [GeekForGeeks] (https://www.geeksforgeeks.org/rock-paper-and-scissor-game-using-javascript/)
 * Inspiration from our awesome Slack community, also amazing support and ideas during the development of this project.
-* Inspiration from Youtube video: (https://www.youtube.com/watch?v=1yS-JV4fWqY)
+* Inspiration from [Youtube video:] (https://www.youtube.com/watch?v=1yS-JV4fWqY)
+* Inspiration and code from [YouTube:] (https://www.youtube.com/watch?v=RwFeg0cEZvQ)
 
 
 * ### Content
