@@ -4,11 +4,8 @@ const userChoiceDisplay = document.getElementById('user-choice');
 const resultDisplay = document.getElementById('result');
 const possibleChoices = document.querySelectorAll('button');
 
-let currentUserScore = document.getElementById('user-score');
-let currentComputerScore = document.getElementById('computer-score');
-let updatedUserScore = document.getElementById('user-score');
-let updatedComputerScore = document.getElementById('computer-score');
-
+let userScore = 0;
+let computerScore = 0;
 
 const ROCK = 'Rock';
 const PAPER = 'Paper';
@@ -46,57 +43,32 @@ function getResult(userChoice, computerChoice) {
         result = 'Its a draw!';
     } else if (computerChoice === ROCK && userChoice === PAPER) {
         result = WIN_TEXT;
+        userScore++;
+        console.log(userScore);
     } else if (computerChoice === ROCK && userChoice === SCISSORS) {
         result = LOSE_TEXT;
+        computerScore++;
+        console.log(computerScore);
     } else if (computerChoice === PAPER && userChoice === SCISSORS) {
         result = WIN_TEXT;
+        userScore++;
+        console.log(userScore);
     } else if (computerChoice === PAPER && userChoice === ROCK) {
         result = LOSE_TEXT;
+        computerScore++;
+        console.log(computerScore);
     } else if (computerChoice === SCISSORS && userChoice === ROCK) {
         result = WIN_TEXT;
+        userScore++;
+        console.log(userScore);
     } else if (computerChoice === SCISSORS && userChoice === PAPER) {
         result = LOSE_TEXT;
+        computerScore++;
+        console.log(computerScore);
     }
 
     resultDisplay.innerHTML = result;
 }
-/**Function to let user know of won game*/
+/**Function to display score
 
-function incrementUserScore() {
-    let updatedUserScore = parseInt(currentUserScore.innerText);
-    updatedUserScore++;
-    currentUserScore.innerText = updatedUserScore;
-    if (updatedUserScore === 5) {
-        Swal.fire('Congratulations, you won!');
-        resetScore();
-        resetChoices();
-        document.getElementsByTagName("body")[0].classList.toggle("swal2-height-auto");
-    }
-}
-
-/** Function to let user know of lost game */
-function incrementComputerScore() {
-    let updatedComputerScore = parseInt(currentComputerScore.innerText);
-    updatedComputerScore++;
-    currentComputerScore.innerText = updatedComputerScore;
-    if (updatedComputerScore === 5) {
-        Swal.fire('Sorry, you lost this one.');
-        resetScore();
-        resetChoices();
-        document.getElementsByTagName("body")[0].classList.toggle("swal2-height-auto");
-
-    }
-}
-
-/** Reset score and game */
-
-function resetScore() {
-    updatedUserScore.innerText = 0;
-    updatedComputerScore.innerText = 0;
-    resultDisplay.innerHTML = "";
-}
-
-function resetChoices() {
-    userChoiceDisplay.innerHTML = '';
-    computerChoiceDisplay.innerHTML = '';
-}
+ */
