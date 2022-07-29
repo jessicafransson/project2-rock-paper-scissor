@@ -44,31 +44,22 @@ function getResult(userChoice, computerChoice) {
     } else if (computerChoice === ROCK && userChoice === PAPER) {
         result = WIN_TEXT;
         userScore++;
-        console.log(userScore);
     } else if (computerChoice === ROCK && userChoice === SCISSORS) {
         result = LOSE_TEXT;
         computerScore++;
-        console.log(computerScore);
     } else if (computerChoice === PAPER && userChoice === SCISSORS) {
         result = WIN_TEXT;
         userScore++;
-        console.log(userScore);
     } else if (computerChoice === PAPER && userChoice === ROCK) {
         result = LOSE_TEXT;
         computerScore++;
-        console.log(computerScore);
     } else if (computerChoice === SCISSORS && userChoice === ROCK) {
         result = WIN_TEXT;
         userScore++;
-        console.log(userScore);
     } else if (computerChoice === SCISSORS && userChoice === PAPER) {
         result = LOSE_TEXT;
         computerScore++;
-        console.log(computerScore);
     }
 
     resultDisplay.innerHTML = result;
 }
-/**Function to display score
-
- */
