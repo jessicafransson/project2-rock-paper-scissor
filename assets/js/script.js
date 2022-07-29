@@ -9,9 +9,6 @@ const PAPER = 'Paper';
 const SCISSORS = 'Scissors';
 const options = [ROCK, PAPER, SCISSORS];
 
-let result;
-var userScore = 0;
-var computerScore = 0;
 
 /** Display the computer and user choices */
 
@@ -57,16 +54,30 @@ function getResult(userChoice, computerChoice) {
 
     resultDisplay.innerHTML = result;
 }
-/**Counting results */
+/**Function to let user know of won game, and reset to new game */
 
-if ('result-score-user') {
-    result = 'You won!';
-    document.getElementById('result-score-user').innerText = ++userScore;
-    userScore.textContent = userScore;
+function incrementUserScore() {
+    let updatedUserScore = parseInt(currentUserScore.innerText);
+    updatedUserScore++;
+    currentUserScore.innerText = updatedUserScore;
+    if (updatedUserScore === 5) {
+        Swal.fire('Congratulations, you won!');
+        resetScore();
+        resetChoices();
+        document.getElementsByTagName("body")[0].classList.toggle("swal2-height-auto");
+    }
 }
 
-else if ('result-score-computer') {
-    result = 'You lost!';
-    document.getElementById('result-score-computer').innerText = ++computerScore;
-    computerScore.textContent = computerScore;
+/** Function to let user know of lost game, and reset to new game */
+function incrementComputerScore() {
+    let updatedComputerScore = parseInt(currentComputerScore.innerText);
+    updatedComputerScore++;
+    currentComputerScore.innerText = updatedComputerScore;
+    if (updatedComputerScore === 5) {
+        Swal.fire('Sorry, you lost this one.');
+        resetScore();
+        resetChoices();
+        document.getElementsByTagName("body")[0].classList.toggle("swal2-height-auto");
+
+    }
 }
