@@ -35,14 +35,15 @@ footer {
 /* Mobile styling */
 
 @media screen and (max-width: 480px) {
-    .title {
-        margin-top: auto;
-    }
+    h1 {
+        display: block;
+        font-size: 20px;
+}
 
-    .button {
-      position: absolute;
-      top: 200px;
-      width: 100vw;
+    p {
+        font-size: 20px;
     }
-
+    h2 {
+        font-size: 20px;
+    }
 }
