@@ -4,6 +4,12 @@ const userChoiceDisplay = document.getElementById('user-choice');
 const resultDisplay = document.getElementById('result');
 const possibleChoices = document.querySelectorAll('button');
 
+let currentUserScore = document.getElementById('user-score');
+let currentComputerScore = document.getElementById('computer-score');
+let updatedUserScore = document.getElementById('user-score');
+let updatedComputerScore = document.getElementById('computer-score');
+
+
 const ROCK = 'Rock';
 const PAPER = 'Paper';
 const SCISSORS = 'Scissors';
@@ -54,7 +60,7 @@ function getResult(userChoice, computerChoice) {
 
     resultDisplay.innerHTML = result;
 }
-/**Function to let user know of won game, and reset to new game */
+/**Function to let user know of won game*/
 
 function incrementUserScore() {
     let updatedUserScore = parseInt(currentUserScore.innerText);
@@ -68,7 +74,7 @@ function incrementUserScore() {
     }
 }
 
-/** Function to let user know of lost game, and reset to new game */
+/** Function to let user know of lost game */
 function incrementComputerScore() {
     let updatedComputerScore = parseInt(currentComputerScore.innerText);
     updatedComputerScore++;
@@ -80,4 +86,17 @@ function incrementComputerScore() {
         document.getElementsByTagName("body")[0].classList.toggle("swal2-height-auto");
 
     }
+}
+
+/** Reset score and game */
+
+function resetScore() {
+    updatedUserScore.innerText = 0;
+    updatedComputerScore.innerText = 0;
+    resultDisplay.innerHTML = "";
+}
+
+function resetChoices() {
+    userChoiceDisplay.innerHTML = '';
+    computerChoiceDisplay.innerHTML = '';
 }
