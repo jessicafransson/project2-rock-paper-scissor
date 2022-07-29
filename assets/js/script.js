@@ -59,14 +59,14 @@ function getResult(userChoice, computerChoice) {
 }
 /**Counting results */
 
-function playerWins() {
-    result = 'You win :)';
-    document.getElementById("result-score-user").innerText = ++userScore;
+if ('result-score-user') {
+    result = 'You won!';
+    document.getElementById('result-score-user').innerText = ++userScore;
     userScore.textContent = userScore;
 }
 
-function computerWins() {
-    result = 'Computer wins :(';
-    document.getElementById("result-score-computer").innerText = ++computerScore;
+else if ('result-score-computer') {
+    result = 'You lost!';
+    document.getElementById('result-score-computer').innerText = ++computerScore;
     computerScore.textContent = computerScore;
 }
