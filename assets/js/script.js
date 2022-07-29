@@ -9,22 +9,26 @@ const PAPER = 'Paper';
 const SCISSORS = 'Scissors';
 const options = [ROCK, PAPER, SCISSORS];
 
+let result;
+var userScore = 0;
+var computerScore = 0;
+
 /** Display the computer and user choices */
 
 possibleChoices.forEach(possibleChoice => {
-  possibleChoice.addEventListener('click', (e) => {
-    const userChoice = e.currentTarget.id;
-    userChoiceDisplay.innerHTML = userChoice;
-    const computerChoice = generateComputerChoice();
-    getResult(userChoice, computerChoice);
-});
+    possibleChoice.addEventListener('click', (e) => {
+        const userChoice = e.currentTarget.id;
+        userChoiceDisplay.innerHTML = userChoice;
+        const computerChoice = generateComputerChoice();
+        getResult(userChoice, computerChoice);
+    });
 });
 
 /** How to get the computer choice
  * Code from Code with Ania Kubów */
 function generateComputerChoice() {
     const randomNumber = Math.floor(Math.random() * 3) + 1;
-    const computerChoice = options[randomNumber-1];
+    const computerChoice = options[randomNumber - 1];
     computerChoiceDisplay.innerHTML = computerChoice;
     return computerChoice;
 }
@@ -32,7 +36,7 @@ function generateComputerChoice() {
 /** How to get the results, code inspiration from Code with Ania Kubów */
 function getResult(userChoice, computerChoice) {
     let result = '';
-    const WIN_TEXT = 'You win!';
+    const WIN_TEXT = 'You won!';
     const LOSE_TEXT = 'You lost!';
 
     if (computerChoice === userChoice) {
@@ -52,4 +56,17 @@ function getResult(userChoice, computerChoice) {
     }
 
     resultDisplay.innerHTML = result;
+}
+/**Counting results */
+
+function playerWins() {
+    result = 'You win :)';
+    document.getElementById("result-score-user").innerText = ++userScore;
+    userScore.textContent = userScore;
+}
+
+function computerWins() {
+    result = 'Computer wins :(';
+    document.getElementById("result-score-computer").innerText = ++computerScore;
+    computerScore.textContent = computerScore;
 }

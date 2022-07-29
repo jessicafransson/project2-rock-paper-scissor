@@ -39,16 +39,18 @@ fonts from fontawesome
 ## Credits
 
 * ### Inspiration
-* inspiration for JavaScript from geeks for geeks: [GeekForGeeks] (https://www.geeksforgeeks.org/rock-paper-and-scissor-game-using-javascript/)
+* inspiration for JavaScript from GeekForGeeks: (https://www.geeksforgeeks.org/rock-paper-and-scissor-game-using-javascript/)
 * Inspiration from our awesome Slack community, also amazing support and ideas during the development of this project.
-* Inspiration from [Youtube video:] (https://www.youtube.com/watch?v=1yS-JV4fWqY)
-* Inspiration and code from [YouTube:] (https://www.youtube.com/watch?v=RwFeg0cEZvQ)
+* Inspiration from Youtube video: (https://www.youtube.com/watch?v=1yS-JV4fWqY)
+* Inspiration and code from YouTube: (https://www.youtube.com/watch?v=RwFeg0cEZvQ)
+* Ideas and inspiration from w3schools: (https://www.w3schools.com/)
 
 
 * ### Content
-* Fonts from: [Fonts] (https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap)
-* Color scheme from: [ColorHex] (https://www.color-hex.com/color-palette/1016582)
+* Fonts from: Fonts: (https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap)
+* Color scheme from: ColorHex (https://www.color-hex.com/color-palette/1016582)
 * Testing code in playcode: https://playcode.io/javascript/
+* Logos from Fontawesome: (https://fontawesome.com/icons/laptop?s=solid)
 
 ## Acknowledgements
 Rock Paper Scissor is my Project two for the Full Stack Software Developer program with [CodeInstitute] (https://codeinstitute.net/). 

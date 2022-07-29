@@ -29,7 +29,7 @@ button:hover {
 
 /* Section for footer styling */
 footer {
-
+    bottom: 0;
 }
 
 /* Mobile styling */
