@@ -4,6 +4,8 @@ const userChoiceDisplay = document.getElementById('user-choice');
 const resultDisplay = document.getElementById('result');
 const possibleChoices = document.querySelectorAll('button');
 
+let userScoreDisplay = document.getElementById('user-score');
+let computerScoreDisplay = document.getElementById('computer-score');
 let userScore = 0;
 let computerScore = 0;
 
@@ -62,4 +64,6 @@ function getResult(userChoice, computerChoice) {
     }
 
     resultDisplay.innerHTML = result;
+    userScoreDisplay.innerHTML = userScore;
+    computerScoreDisplay.innerHTML = computerScore;
 }
