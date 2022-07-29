@@ -53,6 +53,7 @@ fonts from fontawesome
 * Color scheme from: ColorHex (https://www.color-hex.com/color-palette/1016582)
 * Testing code in playcode: https://playcode.io/javascript/
 * Logos from Fontawesome: (https://fontawesome.com/icons/laptop?s=solid)
+* Emojis from (https://getemoji.com/)
 
 ## Acknowledgements
 Rock Paper Scissor is my Project two for the Full Stack Software Developer program with [CodeInstitute] (https://codeinstitute.net/). 
