@@ -5,6 +5,8 @@ Rock Paper Scissor is a game everyone knows! This website is a easy way for one 
 
 ## Features
 * This setup is easy and designed to be quick to play.
+* The setup is clean for and easy to understand.
+* This setup is meant to be easy to be played on all devices. 
 
 fonts from fontawesome 
 
