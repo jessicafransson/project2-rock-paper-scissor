@@ -66,7 +66,16 @@ function getResult(userChoice, computerChoice) {
     resultDisplay.innerHTML = result;
     userScoreDisplay.innerHTML = userScore;
     computerScoreDisplay.innerHTML = computerScore;
+
 }
 
 /** Display end of game, user winner or computer winner
-*/
+ */
+
+function displayWin(userScore, computerScore) {
+    if (userScore > 5) {
+        alert("Awesome, you won!");
+    } else if (computerScore > 5) {
+        alert("Oh, too bad! Maybe next time you'll win!");
+    }
+}
