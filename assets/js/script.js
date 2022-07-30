@@ -66,6 +66,7 @@ function getResult(userChoice, computerChoice) {
     resultDisplay.innerHTML = result;
     userScoreDisplay.innerHTML = userScore;
     computerScoreDisplay.innerHTML = computerScore;
+    displayWin(userScore, computerScore);
 
 }
 
@@ -76,6 +77,6 @@ function displayWin(userScore, computerScore) {
     if (userScore > 5) {
         alert("Awesome, you won!");
     } else if (computerScore > 5) {
-        alert("Oh, too bad! Maybe next time you'll win!");
+        alert("Too bad, you lost this one!");
     }
 }
