@@ -67,3 +67,6 @@ function getResult(userChoice, computerChoice) {
     userScoreDisplay.innerHTML = userScore;
     computerScoreDisplay.innerHTML = computerScore;
 }
+
+/** Display end of game, user winner or computer winner
+*/
