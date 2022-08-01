@@ -14,6 +14,10 @@ const PAPER = 'Paper';
 const SCISSORS = 'Scissors';
 const options = [ROCK, PAPER, SCISSORS];
 
+/** const for popup win/lose */
+const favDialog = document.getElementById('favDialog');
+const confirmBtn = favDialog.querySelector('#confirmBtn');
+
 
 /** Display the computer and user choices */
 
@@ -70,19 +74,36 @@ function getResult(userChoice, computerChoice) {
 
 }
 
-/** Display end of game, user winner or computer winner
- */
+/** decide winner/loser  */
 
 function displayWin(userScore, computerScore) {
-    if (userScore > 5) {
-        alert("Awesome, you won!");
-    } else if (computerScore > 5) {
-        alert("Too bad, you lost this one!");
+    if (userScore > 1) {
+        favDialog.showModal();
     }
 }
 
-/** Function to reset game */
-function playagain() {
+/** Display end of game, user winner or computer winner 
+ *  function displayWin(userScore, computerScore) {
+    if (userScore > 1) {
+        alert("Awesome, you won! Press Ok to play again."); {
+        if response = y 
+        Log "Let's go!"
+        reset();
+        restartGame();
+    }
+    } else if (computerScore > 1) {
+        alert("Too bad, you lost this one! Press Ok to play again."); {
+        userScore = 0;
+        computerScore = 0;
+    }
+}
+}
+*/
+
+
+
+/** Function to reset game 
+ * function playagain() {
     var response = prompt("Play again? (y) or (n)");
     if (response == 'y')
     {
@@ -96,3 +117,4 @@ function playagain() {
     startGame();
     return;
 }
+*/
