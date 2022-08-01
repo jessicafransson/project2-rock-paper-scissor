@@ -80,3 +80,17 @@ function displayWin(userScore, computerScore) {
         alert("Too bad, you lost this one!");
     }
 }
+
+/** Function to reset game */
+function playagain() {
+    var response = prompt("Play again? (y) or (n)");
+    if (response == 'y')
+    {
+        alert("Let's go!")
+    }
+    else if (response == 'n')
+    {
+        alert("Okay, see you next time!")
+    }
+    return;
+}
