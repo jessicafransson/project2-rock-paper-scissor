@@ -3,6 +3,7 @@ const computerChoiceDisplay = document.getElementById('computer-choice');
 const userChoiceDisplay = document.getElementById('user-choice');
 const resultDisplay = document.getElementById('result');
 const possibleChoices = document.querySelectorAll('button');
+const resetDisplay = document.getElementById('reset-global');
 
 let userScoreDisplay = document.getElementById('user-score');
 let computerScoreDisplay = document.getElementById('computer-score');
@@ -20,9 +21,15 @@ const options = [ROCK, PAPER, SCISSORS];
 possibleChoices.forEach(possibleChoice => {
     possibleChoice.addEventListener('click', (e) => {
         const userChoice = e.currentTarget.id;
-        userChoiceDisplay.innerHTML = userChoice;
-        const computerChoice = generateComputerChoice();
-        getResult(userChoice, computerChoice);
+        if (userChoice !== 'confirmBtn' ){
+            userChoiceDisplay.innerHTML = userChoice;
+            const computerChoice = generateComputerChoice();
+            getResult(userChoice, computerChoice);
+        } else {
+            userChoiceDisplay.innerHTML = '';
+            computerChoiceDisplay.innerHTML = '';
+        }
+        
     });
 });
 
@@ -45,12 +52,14 @@ function displayWin(userScore, computerScore) {
 }
 
 function playAgain(userScore, computerScore) {
-    favDialog.showModal();
+    if (!favDialog.open){
+        favDialog.showModal();
+    }
     userScore, computerScore = resetGlobal(userScore, computerScore);
     return userScore, computerScore;
 }
 
-function resetGlobal(userScore, computerScore){
+function resetGlobal(){
     userScore = 0;
     computerScore = 0;
     return userScore, computerScore;
