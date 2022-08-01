@@ -28,6 +28,7 @@ possibleChoices.forEach(possibleChoice => {
         } else {
             userChoiceDisplay.innerHTML = '';
             computerChoiceDisplay.innerHTML = '';
+            resultDisplay.innerHTML = '';
         }
         
     });
@@ -42,13 +43,47 @@ function generateComputerChoice() {
     return computerChoice;
 }
 
+/** Message for the winner
+ *  */
+
+function displayWin(userScore, computerScore) {
+    if (userScore >= 5) {
+        userScore, computerScore = playAgainWinner(userScore, computerScore);
+    } else if (computerScore >= 5) {
+        userScore, computerScore = playAgainLoser(userScore, computerScore);
+    }
+
+    return userScore, computerScore;
+
+}
+
+function playAgainWinner(userScore, computerScore) {
+    if (!winnerDialog.open){
+        winnerDialog.showModal();
+    }
+    userScore, computerScore = resetGlobal(userScore, computerScore);
+    return userScore, computerScore;
+}
+
+function playAgainLoser(userScore, computerScore) {
+    if (!loserDialog.open){
+        loserDialog.showModal();
+    }
+    userScore, computerScore = resetGlobal(userScore, computerScore);
+    return userScore, computerScore;
+}
+
+/** Message for the loser
+
 function displayWin(userScore, computerScore) {
     if (userScore >= 5) {
         userScore, computerScore = playAgain(userScore, computerScore);
     } else if (computerScore >= 5) {
         userScore, computerScore = playAgain(userScore, computerScore);
     }
+
     return userScore, computerScore;
+
 }
 
 function playAgain(userScore, computerScore) {
@@ -58,6 +93,13 @@ function playAgain(userScore, computerScore) {
     userScore, computerScore = resetGlobal(userScore, computerScore);
     return userScore, computerScore;
 }
+
+ *  */
+
+
+/** Reset the scores
+ *  */
+
 
 function resetGlobal(){
     userScore = 0;
@@ -99,3 +141,4 @@ function getResult(userChoice, computerChoice) {
     computerScoreDisplay.innerHTML = computerScore;
     
 }
+
