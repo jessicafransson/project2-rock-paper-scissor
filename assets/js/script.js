@@ -92,5 +92,7 @@ function playagain() {
     {
         alert("Okay, see you next time!")
     }
+    reset();
+    startGame();
     return;
 }

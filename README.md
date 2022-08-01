@@ -8,8 +8,6 @@ Rock Paper Scissor is a game everyone knows! This website is a easy way for one 
 * The setup is clean for and easy to understand.
 * This setup is meant to be easy to be played on all devices. 
 
-fonts from fontawesome 
-
 ## Mockup from figma 
 * 
 
@@ -46,6 +44,7 @@ fonts from fontawesome
 * Inspiration from Youtube video: (https://www.youtube.com/watch?v=1yS-JV4fWqY)
 * Inspiration and code from YouTube: (https://www.youtube.com/watch?v=RwFeg0cEZvQ)
 * Ideas and inspiration from w3schools: (https://www.w3schools.com/)
+* Inspiration for CSS from my project one
 
 
 * ### Content

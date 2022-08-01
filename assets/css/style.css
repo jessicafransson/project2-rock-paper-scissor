@@ -29,7 +29,17 @@ button:hover {
 
 /* Section for footer styling */
 footer {
+    position: relative;
+    clear: both;
+    text-align: center;
     bottom: 0;
+    width: 100%;
+    display: block;
+    margin: auto;
+    letter-spacing: 5px;
+    background-color: #000000;
+    color: #fafafa;
+    padding: 64px 0px 64px 0px;
 }
 
 /* Mobile styling */
