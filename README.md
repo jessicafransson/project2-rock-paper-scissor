@@ -3,13 +3,35 @@ Rock Paper Scissor is a game everyone knows! This website is a easy way for one 
 ## Live page
 * view the live page here [https://jessicafransson.github.io/project2-rock-paper-scissor/] 
 
-## Features
-* This setup is easy and designed to be quick to play.
-* The setup is clean for and easy to understand.
-* This setup is meant to be easy to be played on all devices. 
-
 ## Mockup from figma 
 * 
+
+# UX
+ 
+## About
+
+* This setup is meant to be easy to use
+* This setup is designed so that its quick to start playing
+* This setup is meant to be easy to play on all devices. 
+
+# Features
+
+## These are the different sections of the game 
+
+* Start playing
+
+* Scores are updated here
+
+* First to five decides who wins/loses
+
+* If you win you get this message
+
+* If you lose you get this message 
+
+* To restart the game you do this
+
+* The rules are displayed at the bottom of the page
+
 
 ## Technologies Used
 * Figma for mockup
@@ -19,13 +41,34 @@ Rock Paper Scissor is a game everyone knows! This website is a easy way for one 
 * CSS to style the website
 * JavaScript for the interactivity 
 
-## Testing 
+# Testing 
 
-* This site has gone thru following tests:
-    * css
-    * html validator - Document checking completed. No errors or warnings to show.
-    * JSHint 
+## HTML testing 
 
+* html validator
+
+## CSS testing
+
+* css validator
+
+## Javascript
+
+* JSHINT Javascript testing 
+
+## Accessibility
+
+* tested for accessibility with following score
+
+## Devices
+
+* website has been tested on following devices
+
+# Future improvements
+
+## How to further develop this website
+
+* I would add a random player to be played against online
+* There would be cleaner pop-ups to declare the win/loss score
 
 ## Deployment
 

@@ -27,7 +27,8 @@ button:hover {
 
 
 
-/* Section for footer styling */
+/* Section for footer styling, 
+code inspiration from my project1. */
 footer {
     position: relative;
     clear: both;
@@ -37,8 +38,8 @@ footer {
     display: block;
     margin: auto;
     letter-spacing: 5px;
-    background-color: #000000;
-    color: #fafafa;
+    background-color: bisque;
+    color: black;
     padding: 64px 0px 64px 0px;
 }
 
@@ -48,11 +49,12 @@ footer {
     h1 {
         display: block;
         font-size: 20px;
-}
+    }
 
     p {
         font-size: 20px;
     }
+
     h2 {
         font-size: 20px;
     }
