@@ -14,10 +14,6 @@ const PAPER = 'Paper';
 const SCISSORS = 'Scissors';
 const options = [ROCK, PAPER, SCISSORS];
 
-/** const for popup win/lose */
-const favDialog = document.getElementById('favDialog');
-const confirmBtn = favDialog.querySelector('#confirmBtn');
-
 
 /** Display the computer and user choices */
 
@@ -37,6 +33,27 @@ function generateComputerChoice() {
     const computerChoice = options[randomNumber - 1];
     computerChoiceDisplay.innerHTML = computerChoice;
     return computerChoice;
+}
+
+function displayWin(userScore, computerScore) {
+    if (userScore >= 5) {
+        userScore, computerScore = playAgain(userScore, computerScore);
+    } else if (computerScore >= 5) {
+        userScore, computerScore = playAgain(userScore, computerScore);
+    }
+    return userScore, computerScore;
+}
+
+function playAgain(userScore, computerScore) {
+    favDialog.showModal();
+    userScore, computerScore = resetGlobal(userScore, computerScore);
+    return userScore, computerScore;
+}
+
+function resetGlobal(userScore, computerScore){
+    userScore = 0;
+    computerScore = 0;
+    return userScore, computerScore;
 }
 
 /** How to get the results, code inspiration from Code with Ania Kubów */
@@ -68,53 +85,8 @@ function getResult(userChoice, computerChoice) {
     }
 
     resultDisplay.innerHTML = result;
+    userScore, computerScore = displayWin(userScore, computerScore);
     userScoreDisplay.innerHTML = userScore;
     computerScoreDisplay.innerHTML = computerScore;
-    displayWin(userScore, computerScore);
-
+    
 }
-
-/** decide winner/loser  */
-
-function displayWin(userScore, computerScore) {
-    if (userScore > 1) {
-        favDialog.showModal();
-    }
-}
-
-/** Display end of game, user winner or computer winner 
- *  function displayWin(userScore, computerScore) {
-    if (userScore > 1) {
-        alert("Awesome, you won! Press Ok to play again."); {
-        if response = y 
-        Log "Let's go!"
-        reset();
-        restartGame();
-    }
-    } else if (computerScore > 1) {
-        alert("Too bad, you lost this one! Press Ok to play again."); {
-        userScore = 0;
-        computerScore = 0;
-    }
-}
-}
-*/
-
-
-
-/** Function to reset game 
- * function playagain() {
-    var response = prompt("Play again? (y) or (n)");
-    if (response == 'y')
-    {
-        alert("Let's go!")
-    }
-    else if (response == 'n')
-    {
-        alert("Okay, see you next time!")
-    }
-    reset();
-    startGame();
-    return;
-}
-*/
