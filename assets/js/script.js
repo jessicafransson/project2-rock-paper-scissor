@@ -86,8 +86,8 @@ function resetGlobal() {
 /** How to get the results, code inspiration from Code with Ania Kubów */
 function getResult(userChoice, computerChoice) {
     let result = '';
-    const WIN_TEXT = 'You won!';
-    const LOSE_TEXT = 'You lost!';
+    const WIN_TEXT = 'Win!';
+    const LOSE_TEXT = 'Lose!';
 
     if (computerChoice === userChoice) {
         result = 'Draw!';
