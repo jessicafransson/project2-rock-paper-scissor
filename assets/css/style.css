@@ -67,12 +67,13 @@ button:hover {
 code inspiration from my project1 */
 
 footer {
+    position: absolute;
     background-color: bisque;
     width: 100%;
-    left: 0;
+    bottom: 0;
     padding: 64px 0px 64px 0px;
     flex-shrink: 0;
-    position: relative;
+    
 }
 
 /* Mobile styling */
