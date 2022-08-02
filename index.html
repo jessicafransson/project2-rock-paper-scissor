@@ -40,7 +40,7 @@
         <div class="choice">
             <h3 class="choice-heading">Round result</h3>
             <section class="results">
-                <h2 class="score-heading">You</h2> <span id="user-choice">Nothing</span>
+                <h2 class="score-heading">You</h2> <span class="selected-choices" id="user-choice">- -</span>
             </section>
 
             <section class="results">
@@ -51,18 +51,18 @@
                 <div class="score-area">
                     <h4 class="score-heading">Score</h4>
 
-                    
+
 
 
                     <div class="scoreboard" id="user-score">0</div>
                     <div class="scoreboard">:</div>
                     <span class="scoreboard" id="computer-score">0</span>
-                    
+
                 </div>
             </section>
 
             <section class="results">
-                <h2 class="score-heading">Computer</h2> <span id="computer-choice">Nothing</span>
+                <h2 class="score-heading">Computer</h2> <span class="selected-choices" id="computer-choice">- -</span>
             </section>
 
         </div>
@@ -70,16 +70,16 @@
 
     <!-- Section for reseting the game after win -->
     <dialog id="winnerDialog">
-        <p>Yay, you won!</p>
+        <h2>Yay, you won!</h2>
         <form>
-            <button id="confirmation" onclick='reset' value="default">Play again!</button>
+            <button class="playagain" id="confirmation" onclick='reset' value="default">Play again!</button>
         </form>
     </dialog>
 
     <dialog id="loserDialog">
-        <p>Sorry, you lost this one!</p>
+        <h2>Sorry, you lost this one!</h2>
         <form>
-            <button id="confirmBtn" onclick='reset' value="default">Play again!</button>
+            <button class="playagain" id="confirmBtn" onclick='reset' value="default">Play again!</button>
         </form>
     </dialog>
 

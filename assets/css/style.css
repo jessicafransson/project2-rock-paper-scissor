@@ -3,7 +3,7 @@
 body {
     background-color: #FFF0E5;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 24px;
     font-family: Arial, Helvetica, sans-serif;
     color: #10162F;
 
@@ -12,6 +12,7 @@ body {
 .wrapper {
     max-width: 960px;
     margin: auto;
+    padding: 24px;
 }
 
 .choice-wrapper {
@@ -20,6 +21,23 @@ body {
     padding: 24px;
 }
 
+.selected-choices
+{
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.choices {
+    font-size: 40px;
+    font-weight: 800;
+}
+
+dialog::backdrop {
+    background-color: #fff0e5be;
+}
+
+
+
 .results {
     display: inline-block;
     padding: 50px;
@@ -27,6 +45,8 @@ body {
 }
 #result {
     color: #FFD300;
+    font-size: 32px;
+    font-weight: 800;
 }
 
 
@@ -51,12 +71,33 @@ button {
     border: none;
     outline: none;
     transition: 0.3s;
-    width: 124px;
+    width: 160px;
+    color: #10162f;
 }
 
 button:hover {
     transition: 0.3s;
     transform: scale(1.3);
+    color: #10162F;
+}
+
+.playagain {
+    margin: 2.5rem;
+    font-size: 24px;
+    text-align: center;
+    background-color: #10162F;
+    border: none;
+    outline: none;
+    transition: 0.3s;
+    width: 160px;
+    color: white;
+    height: 64px;
+}
+
+.choices:hover {
+    transition: 0.3s;
+    transform: scale(1.3);
+    color: #3A10E5;
 }
 
 /* Choise */
@@ -99,10 +140,9 @@ button:hover {
 /* Section for footer styling, 
 code inspiration from my project1 */
 footer {
-    position: absolute;
     width: 100%;
     bottom: 0;
-    padding: 64px 0px 64px 0px;
+    padding: 24px;
 }
 
 
