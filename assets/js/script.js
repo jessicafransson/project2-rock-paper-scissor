@@ -21,7 +21,7 @@ const options = [ROCK, PAPER, SCISSORS];
 possibleChoices.forEach(possibleChoice => {
     possibleChoice.addEventListener('click', (e) => {
         const userChoice = e.currentTarget.id;
-        if (userChoice !== 'confirmBtn' ){
+        if (userChoice !== 'confirmBtn') {
             userChoiceDisplay.innerHTML = userChoice;
             const computerChoice = generateComputerChoice();
             getResult(userChoice, computerChoice);
@@ -30,12 +30,12 @@ possibleChoices.forEach(possibleChoice => {
             computerChoiceDisplay.innerHTML = '';
             resultDisplay.innerHTML = '';
         }
-        
+
     });
 });
 
 /** How to get the computer choice
- * Code from Code with Ania Kubów */
+ * Codeinspiration from Code with Ania Kubów */
 function generateComputerChoice() {
     const randomNumber = Math.floor(Math.random() * 3) + 1;
     const computerChoice = options[randomNumber - 1];
@@ -43,22 +43,26 @@ function generateComputerChoice() {
     return computerChoice;
 }
 
-/** Message for the winner
+/** Display win/lose
  *  */
 
 function displayWin(userScore, computerScore) {
     if (userScore >= 5) {
-        userScore, computerScore = playAgainWinner(userScore, computerScore);
-    } else if (computerScore >= 5) {
-        userScore, computerScore = playAgainLoser(userScore, computerScore);
+        userScore,
+        computerScore = playAgainWinner(userScore, computerScore);
+    }
+    else if (computerScore >= 5) {
+        userScore,
+        computerScore = playAgainLoser(userScore, computerScore);
     }
 
     return userScore, computerScore;
 
 }
 
+/** How to reset the game */
 function playAgainWinner(userScore, computerScore) {
-    if (!winnerDialog.open){
+    if (!winnerDialog.open) {
         winnerDialog.showModal();
     }
     userScore, computerScore = resetGlobal(userScore, computerScore);
@@ -66,42 +70,14 @@ function playAgainWinner(userScore, computerScore) {
 }
 
 function playAgainLoser(userScore, computerScore) {
-    if (!loserDialog.open){
+    if (!loserDialog.open) {
         loserDialog.showModal();
     }
     userScore, computerScore = resetGlobal(userScore, computerScore);
     return userScore, computerScore;
 }
 
-/** Message for the loser
-
-function displayWin(userScore, computerScore) {
-    if (userScore >= 5) {
-        userScore, computerScore = playAgain(userScore, computerScore);
-    } else if (computerScore >= 5) {
-        userScore, computerScore = playAgain(userScore, computerScore);
-    }
-
-    return userScore, computerScore;
-
-}
-
-function playAgain(userScore, computerScore) {
-    if (!favDialog.open){
-        favDialog.showModal();
-    }
-    userScore, computerScore = resetGlobal(userScore, computerScore);
-    return userScore, computerScore;
-}
-
- *  */
-
-
-/** Reset the scores
- *  */
-
-
-function resetGlobal(){
+function resetGlobal() {
     userScore = 0;
     computerScore = 0;
     return userScore, computerScore;
@@ -139,6 +115,5 @@ function getResult(userChoice, computerChoice) {
     userScore, computerScore = displayWin(userScore, computerScore);
     userScoreDisplay.innerHTML = userScore;
     computerScoreDisplay.innerHTML = computerScore;
-    
-}
 
+}
