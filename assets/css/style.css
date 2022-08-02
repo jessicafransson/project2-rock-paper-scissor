@@ -81,6 +81,17 @@ button:hover {
     padding-left: 1rem;
 }
 
+.score-heading {
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-variant-caps: all-small-caps;
+}
+
+.scoreboard {
+    display: inline-block;
+    font-size: 64px;
+    font-weight: 800;
+}
 
 /* Section for the result score */
 
@@ -89,7 +100,6 @@ button:hover {
 code inspiration from my project1 */
 footer {
     position: absolute;
-    background-color: bisque;
     width: 100%;
     bottom: 0;
     padding: 64px 0px 64px 0px;
