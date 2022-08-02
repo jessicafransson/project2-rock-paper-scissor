@@ -120,7 +120,6 @@ button:hover {
 .score-area {
     flex-direction: row;
     margin-top: 2rem;
-    padding-left: 1rem;
 }
 
 .score-heading {
