@@ -37,13 +37,17 @@ button:hover {
     transition: 0.3s;
     transform: scale(1.1);
 }
-/* Score popup 
+/* Win/lose popup */
+
+.dialog {
     display: flex;
     width: auto;
     justify-content: center;
     margin-top: 2rem;
     padding-left: 1rem;
-    flex-direction: column;*/
+    flex-direction: column;
+    
+} 
 
 .score-area {
     position: relative;
@@ -72,8 +76,6 @@ footer {
     width: 100%;
     bottom: 0;
     padding: 64px 0px 64px 0px;
-    flex-shrink: 0;
-    
 }
 
 /* Mobile styling 
