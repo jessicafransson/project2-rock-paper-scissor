@@ -90,7 +90,7 @@ function getResult(userChoice, computerChoice) {
     const LOSE_TEXT = 'You lost!';
 
     if (computerChoice === userChoice) {
-        result = 'Its a draw!';
+        result = 'Draw!';
     } else if (computerChoice === ROCK && userChoice === PAPER) {
         result = WIN_TEXT;
         userScore++;
