@@ -45,17 +45,19 @@
         </div>
     </div>
 
-    <!-- Section for reseting the game after win -->
+    <!-- Section for reseting the game after win 
+    
+    method="dialog"-->
     <dialog id="winnerDialog">
         <p>Yay, you won!</p>
-        <form method="dialog">
-            <button id="confirmBtn" onclick='reset' value="default">Play again!</button>
+        <form>
+            <button id="confirmation" onclick='reset' value="default">Play again!</button>
         </form>
     </dialog>
 
     <dialog id="loserDialog">
         <p>Sorry, you lost this one!</p>
-        <form method="dialog">
+        <form method="">
             <button id="confirmBtn" onclick='reset' value="default">Play again!</button>
         </form>
     </dialog>
