@@ -83,9 +83,15 @@ The live website can be found here; [RockpaperScissor](https://jessicafransson.g
 
 ### JSHint testing without errors
 
-## Accessibility
+# Accessibility testing with Lighthouse
 
-### tested for accessibility with following score
+## ![desktop testing score](assets/Images/lighthousescoredesktop.jpg "Lighthouse test for desktop")
+
+## ![mobile testing score](assets/Images/lighthousescoremobile.jpg "Lighthouse test for mobile")
+
+## Tested on Wave webaim with following score:
+
+### Congratulations! No errors were detected!
 
 ## Devices
 
@@ -134,6 +140,7 @@ The live website can be found here; [RockpaperScissor](https://jessicafransson.g
 * Testing code in playcode: https://playcode.io/javascript/
 * Logos from Fontawesome: (https://fontawesome.com/icons/laptop?s=solid)
 * Emojis from (https://getemoji.com/)
+* Mobile and desktop tests with Lighthouse (https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Fjessicafransson.github.io%2Fproject2-rock-paper-scissor%2F%3F&strategy=mobile&category=performance&category=accessibility&category=best-practices&category=seo&category=pwa&utm_source=lh-chrome-ext)
 
 ## Acknowledgements
 Rock Paper Scissor is my Project two for the Full Stack Software Developer program with [CodeInstitute] (https://codeinstitute.net/). 
