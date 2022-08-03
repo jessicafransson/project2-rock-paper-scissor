@@ -58,7 +58,7 @@ The live website can be found here; [RockpaperScissor](https://jessicafransson.g
 
 ## The rules are displayed at the bottom of the page: 
 
-![the rules](assets/Images/displayingrules.jpg "The rules are displayed at the bottom of the page")
+![the rules](assets/Images/displayrules.jpg "The rules are displayed at the bottom of the page")
 
 
 ## Technologies Used
@@ -102,6 +102,12 @@ The live website can be found here; [RockpaperScissor](https://jessicafransson.g
 ### I would add a random player to be played against online
 ###  I would add Lizard Spock to further develop the game to more advanced.
 
+# Known bugs
+
+## There is a known bug on mobile view where the option buttons aren't aligned together. Ran out of time to fix, would do for further improvements. 
+
+![known bug](assets/Images/knownbug.PNG "This is a known bug to display the buttons aren't aligned.")
+
 ## Deployment
 
 ### How i deployed the project:
@@ -122,7 +128,7 @@ The live website can be found here; [RockpaperScissor](https://jessicafransson.g
 * Inspiration for CSS from my project one
 
 
-* ### Content
+ ## Content
 * Fonts from: Fonts: (https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap)
 * Color scheme from: ColorHex (https://www.color-hex.com/color-palette/1016582)
 * Testing code in playcode: https://playcode.io/javascript/
