@@ -1,12 +1,21 @@
-Rock Paper Scissor is a game everyone knows! This website is a easy way for one player to play against the computer.
+# Rock Paper Scissor 
+## This project is a game everyone knows! 
+### This website is a easy way for one player to play against the computer.
+### It's meant to be easy to play, and with an overview that makes it easy to keep track who first gets to 5 wins!
 
 ## Live page
-* view the live page here [https://jessicafransson.github.io/project2-rock-paper-scissor/] 
+The live website can be found here; [RockpaperScissor](https://jessicafransson.github.io/project2-rock-paper-scissor/?)
 
-## Mockup from figma 
-* 
+## Multidevice Mockup
+![different screen sizes](assets/Images/mockupmultidevice.jpg "This is the mockup")
 
 # UX
+
+## Before creating this game i first went into Figma to draw up a sketch.
+### This is the layout i was working towards:
+
+![figma mockup](assets/Images/mockupfigma.jpg "This is the layout inspiration from Figma")
+
  
 ## About
 
@@ -16,21 +25,40 @@ Rock Paper Scissor is a game everyone knows! This website is a easy way for one 
 
 # Features
 
-## These are the different sections of the game 
+## These are the different sections of the game: 
 
-* Start playing
+## This is how it looks before you start playing:
 
-* Scores are updated here
+![before first choice](assets/Images/beforefirstchoice.jpg "This is the start screen, before you start playing")
 
-* First to five decides who wins/loses
 
-* If you win you get this message
+## The emoji is clearly marked when chosen: 
 
-* If you lose you get this message 
+![first choice](assets/Images/firstchoice.jpg "This is the first choice")
 
-* To restart the game you do this
+## If you win you get this message:
 
-* The rules are displayed at the bottom of the page
+![its a win](assets/Images/itsawin.jpg "It's a win")
+
+## If you lose you get this message: 
+
+![its a loss](assets/Images/itsaloss.jpg "It's a loss")
+
+## If its a draw you get this message:
+
+![its a draw](assets/Images/itsadraw.jpg "It's a draw")
+
+## If you win the first 5 rounds you get this pop-up:
+
+![you're the winner](assets/Images/youwon.jpg "You're displayed as the winner")
+
+## If you lose the round you get this pop-up:
+
+![you're the loser](assets/Images/youlost.jpg "You're displayed as the loser")
+
+## The rules are displayed at the bottom of the page: 
+
+![the rules](assets/Images/displayingrules.jpg "The rules are displayed at the bottom of the page")
 
 
 ## Technologies Used
@@ -45,15 +73,15 @@ Rock Paper Scissor is a game everyone knows! This website is a easy way for one 
 
 ## HTML testing 
 
-* html validator
+### Document checking completed. No errors or warnings to show.
 
 ## CSS testing
 
-* css validator
+### Congratulations, no errors has been found! This document has been validated as CSS Level 3 + SVG!
 
 ## Javascript
 
-* JSHINT Javascript testing 
+### JSHint testing without errors
 
 ## Accessibility
 
@@ -61,7 +89,11 @@ Rock Paper Scissor is a game everyone knows! This website is a easy way for one 
 
 ## Devices
 
-* website has been tested on following devices
+### The game has been tested without errors on:
+### Iphone 13 Pro
+### Samsung s20
+### Iphone xs
+### Samsung s10+
 
 # Future improvements
 
