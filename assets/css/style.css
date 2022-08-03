@@ -7,7 +7,6 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     color: #10162F;
     margin: auto;
-
 }
 
 .wrapper {
@@ -16,6 +15,7 @@ body {
     padding: 24px;
 }
 
+/* Code for choices */
 .choice-wrapper {
     background-color: #10162F;
     color: white;
@@ -32,11 +32,29 @@ body {
     font-weight: 800;
 }
 
+.choices:hover {
+    transition: 0.3s;
+    transform: scale(1.3);
+    color: #3A10E5;
+}
+
+.choice {
+    display: inline-block;
+}
+
+.choice-heading {
+    font-size: 24px;
+    font-variant-caps: all-small-caps;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+
 dialog::backdrop {
     background-color: #fff0e5be;
 }
 
-
+/* Code for styling the results*/
 
 .results {
     display: inline-block;
@@ -50,9 +68,7 @@ dialog::backdrop {
     font-weight: 800;
 }
 
-
-
-/* h2 styling, inspiration from my P1 */
+/* Styling section for h2 text areas */
 
 h2 {
 
@@ -101,21 +117,7 @@ button:hover {
     color: #3A10E5;
 }
 
-/* Choise */
-
-.choice {
-    display: inline-block;
-}
-
-.choice-heading {
-    font-size: 24px;
-    font-variant-caps: all-small-caps;
-    font-weight: 600;
-    letter-spacing: 3px;
-}
-
-
-/* Win/lose popup */
+/* Section for styling the Win/lose popup */
 
 .score-area {
     flex-direction: row;
@@ -134,11 +136,7 @@ button:hover {
     font-weight: 800;
 }
 
-/* Section for the result score */
-
-
-/* Section for footer styling, 
-code inspiration from my project1 */
+/* Section for styling the footer*/
 footer {
     width: 100%;
     bottom: 0;
@@ -146,8 +144,7 @@ footer {
 }
 
 
-
-/* Mobile styling */
+/* Mobile styling for 480width */
 
 @media screen and (max-width: 480px) {
     h1 {
@@ -174,7 +171,6 @@ footer {
     .wrapper {
         padding: 8px;
     }
-
 
     button {
         margin: 6px;
