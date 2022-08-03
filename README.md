@@ -36,23 +36,23 @@ The live website can be found here; [RockpaperScissor](https://jessicafransson.g
 
 ![first choice](assets/Images/firstchoice.jpg "This is the first choice")
 
-## If you win you get this message:
+## If you win a round you get this message:
 
 ![its a win](assets/Images/itsawin.jpg "It's a win")
 
-## If you lose you get this message: 
+## If you lose a round you get this message: 
 
 ![its a loss](assets/Images/itsaloss.jpg "It's a loss")
 
-## If its a draw you get this message:
+## If the round is a draw you get this message:
 
 ![its a draw](assets/Images/itsadraw.jpg "It's a draw")
 
-## If you win the first 5 rounds you get this pop-up:
+## If you win 5 rounds before the computer, you see this message:
 
 ![you're the winner](assets/Images/youwon.jpg "You're displayed as the winner")
 
-## If you lose the round you get this pop-up:
+## If the computer wins 5 rounds, you see this message:
 
 ![you're the loser](assets/Images/youlost.jpg "You're displayed as the loser")
 
@@ -85,7 +85,7 @@ The live website can be found here; [RockpaperScissor](https://jessicafransson.g
 
 ## Accessibility
 
-* tested for accessibility with following score
+### tested for accessibility with following score
 
 ## Devices
 
@@ -99,8 +99,8 @@ The live website can be found here; [RockpaperScissor](https://jessicafransson.g
 
 ## How to further develop this website
 
-* I would add a random player to be played against online
-* There would be cleaner pop-ups to declare the win/loss score
+### I would add a random player to be played against online
+###  I would add Lizard Spock to further develop the game to more advanced.
 
 ## Deployment
 
